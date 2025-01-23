@@ -287,15 +287,18 @@ const ttibbsChatIcons = [
   },
 ];
 
+const buttonClass =
+  "flex items-center justify-center px-4 py-4 min-w-[4rem] rounded-xl text-xs font-bold bg-zinc-800 text-white text-center";
+
 const Projects = () => {
   return (
     <section className="flex flex-col items-center justify-center">
       <h2 className="text-2xl lg:text-4xl font-bold text-zinc-200 mb-6 select-none">
         Recent Projects
       </h2>
-      <section className="my-10 grid grid-cols-1 md:grid-cols-2 gap-20">
+      <section className="my-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[30rem] h-auto rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -318,25 +321,16 @@ const Projects = () => {
                 alt="thumbnail"
               />
             </CardItem>
-            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
+            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10 gap-2">
               <AnimatedTooltip items={ncNewsIcons} />
             </div>
             <div className="flex justify-between items-center mt-16">
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://nc-news-ten.vercel.app/"
-                target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
-              >
-                Live View
-              </CardItem>
-              <CardItem
-                translateZ={20}
-                as={Link}
                 href="https://github.com/TTibbs/nc-news"
                 target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+                className={buttonClass}
               >
                 Frontend Repo
               </CardItem>
@@ -345,7 +339,7 @@ const Projects = () => {
                 as={Link}
                 href="https://be-nc-news-92aj.onrender.com/api"
                 target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+                className={buttonClass}
               >
                 API
               </CardItem>
@@ -354,7 +348,7 @@ const Projects = () => {
                 as={Link}
                 href="https://github.com/TTibbs/be-nc-news"
                 target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+                className={buttonClass}
               >
                 Backend Repo
               </CardItem>
@@ -362,7 +356,7 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[30rem] h-auto rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -388,13 +382,13 @@ const Projects = () => {
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
               <AnimatedTooltip items={timeTreasuresIcons} />
             </div>
-            <div className="flex justify-between items-center mt-16 px-10">
+            <div className="flex justify-between items-center mt-16">
               <CardItem
                 translateZ={20}
                 as={Link}
                 href="https://github.com/benedict-robinson/Time-Treasures-Frontend"
                 target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+                className={buttonClass}
               >
                 Frontend Repo
               </CardItem>
@@ -403,7 +397,7 @@ const Projects = () => {
                 as={Link}
                 href="https://time-treasures-backend.onrender.com/api"
                 target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+                className={buttonClass}
               >
                 API
               </CardItem>
@@ -412,7 +406,7 @@ const Projects = () => {
                 as={Link}
                 href="https://github.com/TTibbs/time-treasures-backend"
                 target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+                className={buttonClass}
               >
                 Backend Repo
               </CardItem>
@@ -420,7 +414,7 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[30rem] h-auto rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -446,13 +440,13 @@ const Projects = () => {
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
               <AnimatedTooltip items={quizzupIcons} />
             </div>
-            <div className="flex justify-between items-center mt-16 px-20">
+            <div className="flex justify-between items-center mt-16">
               <CardItem
                 translateZ={20}
                 as={Link}
                 href="https://native-quiz-app.vercel.app/"
                 target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+                className={buttonClass}
               >
                 Live View
               </CardItem>
@@ -461,7 +455,7 @@ const Projects = () => {
                 as={Link}
                 href="https://github.com/TTibbs/native-quiz-app"
                 target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+                className={buttonClass}
               >
                 GitHub Repo
               </CardItem>
@@ -469,7 +463,7 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[30rem] h-auto rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -495,13 +489,13 @@ const Projects = () => {
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
               <AnimatedTooltip items={createMVCServerIcons} />
             </div>
-            <div className="flex justify-between items-center mt-16 px-20">
+            <div className="flex justify-between items-center mt-16">
               <CardItem
                 translateZ={20}
                 as={Link}
                 href="https://create-mvc-server.vercel.app/"
                 target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+                className={buttonClass}
               >
                 Live View
               </CardItem>
@@ -510,7 +504,7 @@ const Projects = () => {
                 as={Link}
                 href="https://github.com/TTibbs/create-mvc-server"
                 target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+                className={buttonClass}
               >
                 GitHub Repo
               </CardItem>
@@ -518,20 +512,19 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[30rem] h-auto rounded-xl p-6 border">
             <CardItem
               translateZ="50"
-              className="text-xl font-bold text-neutral-600 dark:text-white"
+              className="text-xl font-bold text-neutral-600 dark:text-white px-3"
             >
               TTibbs Chat
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 px-3"
             >
-              AI-powered chatbot application, built with Next.js and integrated
-              with the OpenAI API.
+              AI chatbot, built with Next.js and the OpenAI API.
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-6">
               <Image
@@ -545,12 +538,12 @@ const Projects = () => {
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
               <AnimatedTooltip items={ttibbsChatIcons} />
             </div>
-            <div className="flex justify-between items-center mt-16 px-20">
+            <div className="flex justify-between items-center mt-16">
               <CardItem
                 translateZ={20}
                 as={Link}
                 href="/"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+                className={buttonClass}
               >
                 Live View (TBU)
               </CardItem>
@@ -558,7 +551,7 @@ const Projects = () => {
                 translateZ={20}
                 as={Link}
                 href="/"
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+                className={buttonClass}
               >
                 GitHub Repo (TBU)
               </CardItem>
