@@ -28,7 +28,7 @@ const Contact = () => {
         <Button
           borderRadius="2rem"
           onClick={copyEmailToClipboard}
-          className="bg-slate-900 text-white border-slate-800 rounded-full px-6 py-2"
+          className="bg-slate-900 text-white border-slate-800 rounded-full"
         >
           Copy Email
         </Button>
@@ -45,7 +45,6 @@ const Contact = () => {
           </Button>
         </Link>
       </div>
-      {/* Toastify container */}
       <ToastContainer />
     </section>
   );
