@@ -182,7 +182,7 @@ const createMVCServerIcons = [
 const Projects = () => {
   return (
     <section className="flex flex-col items-center justify-center">
-      <h2 className="text-4xl font-bold text-zinc-200 mb-6 select-none">
+      <h2 className="text-2xl lg:text-4xl font-bold text-zinc-200 mb-6 select-none">
         Recent Projects
       </h2>
       <section className="my-10 grid grid-cols-1 md:grid-cols-2 gap-20">
