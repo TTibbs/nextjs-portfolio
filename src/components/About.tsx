@@ -26,7 +26,7 @@ const About = () => {
     },
   ];
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen">
+    <section className="flex flex-col items-center justify-center min-h-[80vh] md:min-h-screen">
       <p className="text-zinc-200 dark:text-neutral-200 text-2xl select-none">
         Hi, I&apos;m Terry, I am a...
       </p>

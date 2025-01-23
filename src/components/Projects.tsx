@@ -70,6 +70,64 @@ const ncNewsIcons = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg",
   },
 ];
+const timeTreasuresIcons = [
+  {
+    id: 1,
+    name: "Node.js",
+    designation: "Runtime Envrionment",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+  },
+  {
+    id: 2,
+    name: "Express",
+    designation: "Web Framework",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+  },
+  {
+    id: 3,
+    name: "React",
+    designation: "UI Library",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  },
+  {
+    id: 4,
+    name: "JavaScript",
+    designation: "Programming Language",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  },
+  {
+    id: 5,
+    name: "Tailwind CSS",
+    designation: "Styling Framework",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    id: 6,
+    name: "PostgreSQL",
+    designation: "Database",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    id: 7,
+    name: "Jest",
+    designation: "Testing Framework",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
+  },
+  {
+    id: 8,
+    name: "Supabase",
+    designation: "Backend Platform",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+  },
+];
 const quizzupIcons = [
   {
     id: 1,
@@ -278,7 +336,7 @@ const Projects = () => {
               />
             </CardItem>
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
-              <AnimatedTooltip items={ncNewsIcons} />
+              <AnimatedTooltip items={timeTreasuresIcons} />
             </div>
             <div className="flex justify-between items-center mt-16 px-10">
               <CardItem
