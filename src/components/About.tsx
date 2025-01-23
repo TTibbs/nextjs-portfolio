@@ -28,7 +28,7 @@ const About = () => {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen">
       <p className="text-zinc-200 dark:text-neutral-200 text-xs sm:text-base md:text-xl select-none">
-        Hi, I'm Terry, I am a...
+        Hi, I&apos;m Terry, I am a...
       </p>
       <TypewriterEffectSmooth
         words={words}
