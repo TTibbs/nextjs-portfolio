@@ -27,7 +27,7 @@ const About = () => {
   ];
   return (
     <section className="flex flex-col items-center justify-center min-h-screen">
-      <p className="text-zinc-200 dark:text-neutral-200 text-xs sm:text-base md:text-xl select-none">
+      <p className="text-zinc-200 dark:text-neutral-200 text-2xl select-none">
         Hi, I&apos;m Terry, I am a...
       </p>
       <TypewriterEffectSmooth
@@ -35,7 +35,7 @@ const About = () => {
         cursorClassName="bg-zinc-100"
         className="select-none"
       />
-      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+      <div className="flex space-x-4">
         <SocialIcon
           network="linkedin"
           url="https://www.linkedin.com/in/terry-www/"

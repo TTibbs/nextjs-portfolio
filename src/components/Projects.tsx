@@ -185,7 +185,7 @@ const Projects = () => {
       <h2 className="text-4xl font-bold text-zinc-200 mb-6 select-none">
         Recent Projects
       </h2>
-      <section className="my-10 grid grid-cols-2 gap-20">
+      <section className="my-10 grid grid-cols-1 md:grid-cols-2 gap-20">
         <CardContainer className="inter-var">
           <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
             <CardItem
