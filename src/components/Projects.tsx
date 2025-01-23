@@ -236,6 +236,56 @@ const createMVCServerIcons = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
   },
 ];
+const ttibbsChatIcons = [
+  {
+    id: 1,
+    name: "React",
+    designation: "UI Library",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  },
+  {
+    id: 2,
+    name: "Next.js",
+    designation: "React Framework",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    id: 3,
+    name: "TypeScript",
+    designation: "Typed JavaScript",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  },
+  {
+    id: 4,
+    name: "Tailwind CSS",
+    designation: "Styling Framework",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    id: 5,
+    name: "Framer",
+    designation: "Animation Library",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg",
+  },
+  {
+    id: 6,
+    name: "OpenAI API",
+    designation: "AI-Powered Backend",
+    image: "/icons8-chatgpt-50.png",
+  },
+  {
+    id: 7,
+    name: "Vercel",
+    designation: "Deployment Platform",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg",
+  },
+];
 
 const Projects = () => {
   return (
@@ -463,6 +513,54 @@ const Projects = () => {
                 className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
               >
                 GitHub Repo
+              </CardItem>
+            </div>
+          </CardBody>
+        </CardContainer>
+        <CardContainer className="inter-var">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+            <CardItem
+              translateZ="50"
+              className="text-xl font-bold text-neutral-600 dark:text-white"
+            >
+              TTibbs Chat
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+            >
+              AI-powered chatbot application, built with Next.js and integrated
+              with the OpenAI API.
+            </CardItem>
+            <CardItem translateZ="100" className="w-full mt-6">
+              <Image
+                src="/ttibbschat.png"
+                height="1000"
+                width="1000"
+                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                alt="thumbnail"
+              />
+            </CardItem>
+            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
+              <AnimatedTooltip items={ttibbsChatIcons} />
+            </div>
+            <div className="flex justify-between items-center mt-16 px-20">
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="/"
+                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+              >
+                Live View (TBU)
+              </CardItem>
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="/"
+                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+              >
+                GitHub Repo (TBU)
               </CardItem>
             </div>
           </CardBody>
