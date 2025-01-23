@@ -182,8 +182,10 @@ const createMVCServerIcons = [
 const Projects = () => {
   return (
     <section className="flex flex-col items-center justify-center">
-      <h2 className="text-3xl font-bold text-zinc-200">Recent Projects</h2>
-      <section className="my-10 flex flex-wrap items-center justify-center gap-16">
+      <h2 className="text-4xl font-bold text-zinc-200 mb-6 select-none">
+        Recent Projects
+      </h2>
+      <section className="my-10 grid grid-cols-2 gap-20">
         <CardContainer className="inter-var">
           <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
             <CardItem
@@ -197,7 +199,7 @@ const Projects = () => {
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
             >
-              Full stack news aggregate app.
+              Full stack news aggregate app
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-6">
               <Image
@@ -228,7 +230,83 @@ const Projects = () => {
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
               >
-                GitHub Repo
+                Frontend Repo
+              </CardItem>
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://be-nc-news-92aj.onrender.com/api"
+                target="__blank"
+                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+              >
+                API
+              </CardItem>
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://github.com/TTibbs/be-nc-news"
+                target="__blank"
+                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+              >
+                Backend Repo
+              </CardItem>
+            </div>
+          </CardBody>
+        </CardContainer>
+        <CardContainer className="inter-var">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+            <CardItem
+              translateZ="50"
+              className="text-xl font-bold text-neutral-600 dark:text-white"
+            >
+              Time Treasures
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+            >
+              Frontend for NC Final Project "Time Treasures"
+            </CardItem>
+            <CardItem translateZ="100" className="w-full mt-6">
+              <Image
+                src="/time-treasures.png"
+                height="1000"
+                width="1000"
+                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                alt="thumbnail"
+              />
+            </CardItem>
+            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
+              <AnimatedTooltip items={ncNewsIcons} />
+            </div>
+            <div className="flex justify-between items-center mt-16 px-10">
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://github.com/benedict-robinson/Time-Treasures-Frontend"
+                target="__blank"
+                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+              >
+                Frontend Repo
+              </CardItem>
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://time-treasures-backend.onrender.com/api"
+                target="__blank"
+                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+              >
+                API
+              </CardItem>
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://github.com/TTibbs/time-treasures-backend"
+                target="__blank"
+                className="px-4 py-2 rounded-xl text-xs font-bold bg-zinc-800"
+              >
+                Backend Repo
               </CardItem>
             </div>
           </CardBody>
@@ -260,7 +338,7 @@ const Projects = () => {
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
               <AnimatedTooltip items={quizzupIcons} />
             </div>
-            <div className="flex justify-between items-center mt-16">
+            <div className="flex justify-between items-center mt-16 px-20">
               <CardItem
                 translateZ={20}
                 as={Link}
@@ -309,7 +387,7 @@ const Projects = () => {
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
               <AnimatedTooltip items={createMVCServerIcons} />
             </div>
-            <div className="flex justify-between items-center mt-16">
+            <div className="flex justify-between items-center mt-16 px-20">
               <CardItem
                 translateZ={20}
                 as={Link}
