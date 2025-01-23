@@ -296,9 +296,9 @@ const Projects = () => {
       <h2 className="text-2xl lg:text-4xl font-bold text-zinc-200 mb-6 select-none">
         Recent Projects
       </h2>
-      <section className="my-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+      <section className="my-10 grid w-[90vw] grid-cols-1 md:grid-cols-2 items-stretch xl:grid-cols-3 gap-5">
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[30rem] h-auto rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[25rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -356,7 +356,7 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[30rem] h-auto rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[25rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -414,7 +414,7 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[30rem] h-auto rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[25rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -426,7 +426,7 @@ const Projects = () => {
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
             >
-              React Native quiz app using the OTDB API for questions.
+              React Native app using the OTDB API.
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-6">
               <Image
@@ -463,7 +463,7 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[30rem] h-auto rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[25rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -475,7 +475,7 @@ const Projects = () => {
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
             >
-              CLI tool to scaffold a MVC structured server with a database.
+              MVC server, CLI scaffolding tool.
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-6">
               <Image
@@ -512,7 +512,7 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[30rem] h-auto rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[25rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white px-3"
