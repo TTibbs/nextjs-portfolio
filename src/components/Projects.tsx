@@ -288,7 +288,7 @@ const ttibbsChatIcons = [
 ];
 
 const buttonClass =
-  "flex items-center justify-center px-4 py-4 min-w-[4rem] rounded-xl text-xs font-bold bg-zinc-800 text-white text-center";
+  "flex items-center justify-center px-2 sm:px-4 py-2 sm:py-4 w-[100px] sm:w-[120px] rounded-xl text-xs font-bold bg-zinc-800 text-white text-center";
 
 const Projects = () => {
   return (
@@ -296,67 +296,154 @@ const Projects = () => {
       <h2 className="text-2xl lg:text-4xl font-bold text-zinc-200 mb-6 select-none">
         Recent Projects
       </h2>
-      <section className="my-10 grid w-[90vw] grid-cols-1 md:grid-cols-2 items-stretch xl:grid-cols-3 gap-5">
+      <section className="my-10 grid w-full max-w-7xl grid-cols-1 space-y-6 md:space-y-0 md:grid-cols-2 xl:grid-cols-3 gap-4 px-4">
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[25rem] h-[40rem] rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
-              className="text-xl font-bold text-neutral-600 dark:text-white"
+              className="text-xl font-bold text-neutral-600 dark:text-white px-3"
             >
-              NC News
+              TTibbs Chat
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 px-3"
             >
-              Full stack news aggregate app
+              AI chatbot, built with Next.js and the OpenAI API.
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-6">
               <Image
-                src="/nc-news.png"
+                src="/ttibbschat.png"
                 height="1000"
                 width="1000"
                 className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
               />
             </CardItem>
-            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10 gap-2">
-              <AnimatedTooltip items={ncNewsIcons} />
+            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
+              <AnimatedTooltip items={ttibbsChatIcons} />
             </div>
             <div className="flex justify-between items-center mt-16">
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://github.com/TTibbs/nc-news"
-                target="__blank"
+                href="/"
                 className={buttonClass}
               >
-                Frontend Repo
+                Live View (TBU)
               </CardItem>
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://be-nc-news-92aj.onrender.com/api"
-                target="__blank"
+                href="/"
                 className={buttonClass}
               >
-                API
-              </CardItem>
-              <CardItem
-                translateZ={20}
-                as={Link}
-                href="https://github.com/TTibbs/be-nc-news"
-                target="__blank"
-                className={buttonClass}
-              >
-                Backend Repo
+                GitHub Repo (TBU)
               </CardItem>
             </div>
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[25rem] h-[40rem] rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] h-[40rem] rounded-xl p-6 border">
+            <CardItem
+              translateZ="50"
+              className="text-xl font-bold text-neutral-600 dark:text-white"
+            >
+              Create MVC Server
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+            >
+              MVC server, CLI scaffolding tool.
+            </CardItem>
+            <CardItem translateZ="100" className="w-full mt-6">
+              <Image
+                src="/create-mvc-server.png"
+                height="1000"
+                width="1000"
+                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                alt="thumbnail"
+              />
+            </CardItem>
+            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
+              <AnimatedTooltip items={createMVCServerIcons} />
+            </div>
+            <div className="flex justify-between items-center mt-16">
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://create-mvc-server.vercel.app/"
+                target="__blank"
+                className={buttonClass}
+              >
+                Live View
+              </CardItem>
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://github.com/TTibbs/create-mvc-server"
+                target="__blank"
+                className={buttonClass}
+              >
+                GitHub Repo
+              </CardItem>
+            </div>
+          </CardBody>
+        </CardContainer>
+        <CardContainer className="inter-var">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] h-[40rem] rounded-xl p-6 border">
+            <CardItem
+              translateZ="50"
+              className="text-xl font-bold text-neutral-600 dark:text-white"
+            >
+              Quizzup
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+            >
+              React Native app using the OTDB API.
+            </CardItem>
+            <CardItem translateZ="100" className="w-full mt-6">
+              <Image
+                src="/quizzup.png"
+                height="1000"
+                width="1000"
+                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                alt="thumbnail"
+              />
+            </CardItem>
+            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
+              <AnimatedTooltip items={quizzupIcons} />
+            </div>
+            <div className="flex justify-between items-center mt-16">
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://native-quiz-app.vercel.app/"
+                target="__blank"
+                className={buttonClass}
+              >
+                Live View
+              </CardItem>
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://github.com/TTibbs/native-quiz-app"
+                target="__blank"
+                className={buttonClass}
+              >
+                GitHub Repo
+              </CardItem>
+            </div>
+          </CardBody>
+        </CardContainer>
+        <CardContainer className="inter-var">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -414,146 +501,59 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[25rem] h-[40rem] rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
             >
-              Quizzup
+              NC News
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
             >
-              React Native app using the OTDB API.
+              Full stack news aggregate app
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-6">
               <Image
-                src="/quizzup.png"
+                src="/nc-news.png"
                 height="1000"
                 width="1000"
                 className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
               />
             </CardItem>
-            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
-              <AnimatedTooltip items={quizzupIcons} />
+            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10 gap-2">
+              <AnimatedTooltip items={ncNewsIcons} />
             </div>
             <div className="flex justify-between items-center mt-16">
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://native-quiz-app.vercel.app/"
+                href="https://github.com/TTibbs/nc-news"
                 target="__blank"
                 className={buttonClass}
               >
-                Live View
+                Frontend Repo
               </CardItem>
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://github.com/TTibbs/native-quiz-app"
+                href="https://be-nc-news-92aj.onrender.com/api"
                 target="__blank"
                 className={buttonClass}
               >
-                GitHub Repo
+                API
               </CardItem>
-            </div>
-          </CardBody>
-        </CardContainer>
-        <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[25rem] h-[40rem] rounded-xl p-6 border">
-            <CardItem
-              translateZ="50"
-              className="text-xl font-bold text-neutral-600 dark:text-white"
-            >
-              Create MVC Server
-            </CardItem>
-            <CardItem
-              as="p"
-              translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-            >
-              MVC server, CLI scaffolding tool.
-            </CardItem>
-            <CardItem translateZ="100" className="w-full mt-6">
-              <Image
-                src="/create-mvc-server.png"
-                height="1000"
-                width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                alt="thumbnail"
-              />
-            </CardItem>
-            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
-              <AnimatedTooltip items={createMVCServerIcons} />
-            </div>
-            <div className="flex justify-between items-center mt-16">
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://create-mvc-server.vercel.app/"
+                href="https://github.com/TTibbs/be-nc-news"
                 target="__blank"
                 className={buttonClass}
               >
-                Live View
-              </CardItem>
-              <CardItem
-                translateZ={20}
-                as={Link}
-                href="https://github.com/TTibbs/create-mvc-server"
-                target="__blank"
-                className={buttonClass}
-              >
-                GitHub Repo
-              </CardItem>
-            </div>
-          </CardBody>
-        </CardContainer>
-        <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[25rem] h-[40rem] rounded-xl p-6 border">
-            <CardItem
-              translateZ="50"
-              className="text-xl font-bold text-neutral-600 dark:text-white px-3"
-            >
-              TTibbs Chat
-            </CardItem>
-            <CardItem
-              as="p"
-              translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 px-3"
-            >
-              AI chatbot, built with Next.js and the OpenAI API.
-            </CardItem>
-            <CardItem translateZ="100" className="w-full mt-6">
-              <Image
-                src="/ttibbschat.png"
-                height="1000"
-                width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                alt="thumbnail"
-              />
-            </CardItem>
-            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
-              <AnimatedTooltip items={ttibbsChatIcons} />
-            </div>
-            <div className="flex justify-between items-center mt-16">
-              <CardItem
-                translateZ={20}
-                as={Link}
-                href="/"
-                className={buttonClass}
-              >
-                Live View (TBU)
-              </CardItem>
-              <CardItem
-                translateZ={20}
-                as={Link}
-                href="/"
-                className={buttonClass}
-              >
-                GitHub Repo (TBU)
+                Backend Repo
               </CardItem>
             </div>
           </CardBody>
