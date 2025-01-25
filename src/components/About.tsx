@@ -3,6 +3,7 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { SocialIcon } from "react-social-icons";
 import Image from "next/image";
 import Link from "next/link";
+import { Spotlight } from "./ui/Spotlight";
 
 const About = () => {
   const words = [
@@ -32,6 +33,7 @@ const About = () => {
       className="flex flex-col items-center justify-center min-h-[80vh] md:min-h-screen"
       aria-label="About Terry"
     >
+      <Spotlight className="-top-0 left-0 md:left-60 md:-top-20" fill="white" />
       <h1 className="text-zinc-200 dark:text-neutral-200 text-2xl select-none">
         Hi, I&apos;m Terry, I am a...
       </h1>

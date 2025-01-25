@@ -288,7 +288,7 @@ const ttibbsChatIcons = [
 ];
 
 const buttonClass =
-  "flex items-center justify-center px-2 sm:px-4 py-2 sm:py-4 w-[100px] sm:w-[120px] rounded-xl text-xs font-bold bg-zinc-800 text-white text-center";
+  "flex items-center justify-center py-3 px-4 rounded-xl text-xs font-bold bg-zinc-800 text-white text-center";
 
 const Projects = () => {
   return (
@@ -298,7 +298,7 @@ const Projects = () => {
       </h2>
       <section className="my-10 grid w-full max-w-7xl grid-cols-1 space-y-6 md:space-y-0 md:grid-cols-2 xl:grid-cols-3 gap-4 px-4">
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] h-[40rem] rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] md:w-[25rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white px-3"
@@ -345,7 +345,7 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] h-[40rem] rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] md:w-[25rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -394,7 +394,7 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] h-[40rem] rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] md:w-[25rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -443,7 +443,7 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] h-[40rem] rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] md:w-[25rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -501,7 +501,7 @@ const Projects = () => {
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] h-[40rem] rounded-xl p-6 border">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black dark:border-white/[0.2] border-blue-600 w-[20rem] md:w-[25rem] h-[40rem] rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
