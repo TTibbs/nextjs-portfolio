@@ -30,7 +30,7 @@ const Contact = () => {
           onClick={copyEmailToClipboard}
           className="bg-slate-900 text-white border-slate-800 rounded-full"
         >
-          Copy Email
+          Email
         </Button>
         <Link
           href="https://drive.google.com/file/d/1wwnT4kgZsBmaac5KbKAbshvwpNaJbkWo/view"
