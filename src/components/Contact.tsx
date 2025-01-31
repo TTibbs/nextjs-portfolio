@@ -21,7 +21,7 @@ const Contact = () => {
 
   return (
     <section className="h-[40rem] flex flex-col items-center justify-center space-y-10">
-      <h1 className="text-base lg:text-2xl text-center select-none">
+      <h1 className="text-base lg:text-2xl text-center select-none text-zinc-800 dark:text-zinc-100">
         Want to get in touch? I&apos;m just a click away
       </h1>
       <div className="flex items-center justify-center gap-12">

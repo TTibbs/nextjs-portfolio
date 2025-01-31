@@ -19,20 +19,6 @@ export const metadata: Metadata = {
   title: "Terry W | Full-Stack Developer",
   description:
     "Full-stack developer specializing in React, Node.js, and TypeScript. View my projects and get in touch.",
-  openGraph: {
-    title: "Terry W | Full-Stack Developer",
-    description:
-      "Full-stack developer specializing in React, Node.js, and TypeScript",
-    type: "website",
-    url: "https://your-domain.com",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
@@ -46,7 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
-          <div className="w-full bg-black bg-dot-white/[0.2] relative flex items-center justify-center">
+          <div className="w-full bg-zinc-200 bg-dot-black/[0.4] dark:bg-zinc-900 dark:bg-dot-white/[0.4] relative flex items-center justify-center">
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
             <ThemeToggle />
