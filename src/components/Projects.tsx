@@ -5,6 +5,36 @@ import Image from "next/image";
 import Link from "next/link";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
+const promptWalletIcons = [
+  {
+    id: 1,
+    name: "Next.js",
+    designation: "React Framework",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    id: 2,
+    name: "React",
+    designation: "UI Library",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  },
+  {
+    id: 3,
+    name: "TypeScript",
+    designation: "Typed JavaScript",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  },
+  {
+    id: 4,
+    name: "Tailwind CSS",
+    designation: "Styling Framework",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  },
+];
 const createMVCServerIcons = [
   {
     id: 1,
@@ -123,13 +153,6 @@ const timeTreasuresIcons = [
   },
   {
     id: 7,
-    name: "Jest",
-    designation: "Testing Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
-  },
-  {
-    id: 8,
     name: "Supabase",
     designation: "Backend Platform",
     image:
@@ -181,20 +204,13 @@ const ncNewsIcons = [
   },
   {
     id: 7,
-    name: "Jest",
-    designation: "Testing Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
-  },
-  {
-    id: 8,
     name: "Supabase",
     designation: "Backend Platform",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
   },
   {
-    id: 9,
+    id: 8,
     name: "Vercel",
     designation: "Deployment Platform",
     image:
@@ -218,12 +234,61 @@ const Projects = () => {
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
             >
+              Prompt Wallet
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-12 overflow-hidden"
+            >
+              Save and organise your AI prompts, stored in local storage.
+            </CardItem>
+            <CardItem translateZ="100" className="w-full mt-6">
+              <Image
+                src="/prompt-wallet.png"
+                height="1000"
+                width="1000"
+                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                alt="thumbnail"
+              />
+            </CardItem>
+            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
+              <AnimatedTooltip items={promptWalletIcons} />
+            </div>
+            <div className="flex justify-between items-center mt-16">
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://prompt-wallet.vercel.app/"
+                target="__blank"
+                className={buttonClass}
+              >
+                Live View
+              </CardItem>
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://github.com/TTibbs/prompt-wallet"
+                target="__blank"
+                className={buttonClass}
+              >
+                GitHub Repo
+              </CardItem>
+            </div>
+          </CardBody>
+        </CardContainer>
+        <CardContainer className="inter-var">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black hover:border hover:border-emerald-700 transition-all duration-200 ease-linear w-[20rem] md:w-[25rem] h-[38.5rem] rounded-xl p-6">
+            <CardItem
+              translateZ="50"
+              className="text-xl font-bold text-neutral-600 dark:text-white"
+            >
               Create MVC Server
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-12"
             >
               MVC server, CLI scaffolding tool.
             </CardItem>
@@ -272,7 +337,7 @@ const Projects = () => {
             <CardItem
               as="p"
               translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-12"
             >
               React Native app using the OTDB API.
             </CardItem>
@@ -321,7 +386,7 @@ const Projects = () => {
             <CardItem
               as="p"
               translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-12"
             >
               Frontend for NC Final Project "Time Treasures"
             </CardItem>
@@ -379,7 +444,7 @@ const Projects = () => {
             <CardItem
               as="p"
               translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-12"
             >
               Full stack news aggregate app
             </CardItem>
