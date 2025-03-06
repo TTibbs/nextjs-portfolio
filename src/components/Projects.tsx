@@ -4,219 +4,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
-
-const promptWalletIcons = [
-  {
-    id: 1,
-    name: "Next.js",
-    designation: "React Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-  },
-  {
-    id: 2,
-    name: "React",
-    designation: "UI Library",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-  },
-  {
-    id: 3,
-    name: "TypeScript",
-    designation: "Typed JavaScript",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-  },
-  {
-    id: 4,
-    name: "Tailwind CSS",
-    designation: "Styling Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-];
-const createMVCServerIcons = [
-  {
-    id: 1,
-    name: "Node.js",
-    designation: "Runtime Environment",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-  },
-  {
-    id: 2,
-    name: "NPM",
-    designation: "Package Manager",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
-  },
-  {
-    id: 3,
-    name: "JavaScript",
-    designation: "Programming Language",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-  },
-  {
-    id: 4,
-    name: "TypeScript",
-    designation: "Typed JavaScript",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-  },
-];
-const quizzupIcons = [
-  {
-    id: 1,
-    name: "Expo",
-    designation: "Development Platform",
-    image: "/icons8-expo-50.png",
-  },
-  {
-    id: 2,
-    name: "React",
-    designation: "UI Library",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-  },
-  {
-    id: 3,
-    name: "TypeScript",
-    designation: "Typed JavaScript",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-  },
-  {
-    id: 4,
-    name: "Tailwind CSS",
-    designation: "Styling Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    id: 5,
-    name: "Axios",
-    designation: "HTTP Client",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg",
-  },
-  {
-    id: 6,
-    name: "Vercel",
-    designation: "Deployment Platform",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg",
-  },
-];
-const timeTreasuresIcons = [
-  {
-    id: 1,
-    name: "Node.js",
-    designation: "Runtime Envrionment",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-  },
-  {
-    id: 2,
-    name: "Express",
-    designation: "Web Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-  },
-  {
-    id: 3,
-    name: "React Native",
-    designation: "Frontend Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-  },
-  {
-    id: 4,
-    name: "JavaScript",
-    designation: "Programming Language",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-  },
-  {
-    id: 5,
-    name: "Tailwind CSS",
-    designation: "Styling Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    id: 6,
-    name: "PostgreSQL",
-    designation: "Database",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
-  },
-  {
-    id: 7,
-    name: "Supabase",
-    designation: "Backend Platform",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
-  },
-];
-const ncNewsIcons = [
-  {
-    id: 1,
-    name: "Node.js",
-    designation: "Runtime Envrionment",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-  },
-  {
-    id: 2,
-    name: "Express",
-    designation: "Web Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-  },
-  {
-    id: 3,
-    name: "Vite",
-    designation: "Development Tool",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
-  },
-  {
-    id: 4,
-    name: "JavaScript",
-    designation: "Programming Language",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-  },
-  {
-    id: 5,
-    name: "Tailwind CSS",
-    designation: "Styling Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    id: 6,
-    name: "PostgreSQL",
-    designation: "Database",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
-  },
-  {
-    id: 7,
-    name: "Supabase",
-    designation: "Backend Platform",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
-  },
-  {
-    id: 8,
-    name: "Vercel",
-    designation: "Deployment Platform",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg",
-  },
-];
+import { projectIcons } from "@/lib/data";
 
 const buttonClass =
   "flex items-center justify-center py-3 px-4 h-10 w-20 rounded-xl text-xs font-bold bg-zinc-800 text-white text-center";
@@ -234,6 +22,58 @@ const Projects = () => {
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
             >
+              Email Template Builder
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-12 overflow-hidden"
+            >
+              Build and save email templates with a drag and drop interface.
+            </CardItem>
+            <CardItem translateZ="100" className="w-full mt-6">
+              <Image
+                src="https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4Kpdl65ZzUJVuMCa5XOoZHYKbyPiSW6khA8szD"
+                height="1000"
+                width="1000"
+                className="h-60 w-full object-contain rounded-xl group-hover/card:shadow-xl"
+                alt="thumbnail"
+                priority
+              />
+            </CardItem>
+            <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
+              <AnimatedTooltip
+                items={projectIcons.noCodeTemplateBuilderIcons}
+              />
+            </div>
+            <div className="flex justify-between items-center mt-16">
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://no-code-email-template-builder.vercel.app/"
+                target="__blank"
+                className={buttonClass}
+              >
+                Live View
+              </CardItem>
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://github.com/TTibbs/no-code-email-template-builder"
+                target="__blank"
+                className={buttonClass}
+              >
+                GitHub Repo
+              </CardItem>
+            </div>
+          </CardBody>
+        </CardContainer>
+        <CardContainer className="inter-var">
+          <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black hover:border hover:border-emerald-700 transition-all duration-200 ease-linear w-[20rem] md:w-[25rem] h-[38.5rem] rounded-xl p-6">
+            <CardItem
+              translateZ="50"
+              className="text-xl font-bold text-neutral-600 dark:text-white"
+            >
               Prompt Wallet
             </CardItem>
             <CardItem
@@ -241,19 +81,21 @@ const Projects = () => {
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-12 overflow-hidden"
             >
-              Save and organise your AI prompts, stored in local storage.
+              Save and organise your AI prompts, uses Firebase Auth and
+              Firestore with Stripe.
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-6">
               <Image
-                src="/prompt-wallet.png"
+                src="https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4Ku0rTMRpT6F1HCrQWNasAUhpqJEw9Smc4BfnP"
                 height="1000"
                 width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                className="h-60 w-full object-contain rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
+                priority
               />
             </CardItem>
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
-              <AnimatedTooltip items={promptWalletIcons} />
+              <AnimatedTooltip items={projectIcons.promptWalletIcons} />
             </div>
             <div className="flex justify-between items-center mt-16">
               <CardItem
@@ -294,15 +136,16 @@ const Projects = () => {
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-6">
               <Image
-                src="/create-mvc-server.png"
+                src="https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4Kuicix8pT6F1HCrQWNasAUhpqJEw9Smc4BfnP"
                 height="1000"
                 width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                className="h-60 w-full object-contain rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
+                priority
               />
             </CardItem>
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
-              <AnimatedTooltip items={createMVCServerIcons} />
+              <AnimatedTooltip items={projectIcons.createMVCServerIcons} />
             </div>
             <div className="flex justify-between items-center mt-16">
               <CardItem
@@ -343,15 +186,16 @@ const Projects = () => {
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-6">
               <Image
-                src="/quizzup.png"
+                src="https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4Kriq3ofeD4a6LsfCkMlTopJtqhv2VI3BwiU5K"
                 height="1000"
                 width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                className="h-60 w-full object-contain rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
+                priority
               />
             </CardItem>
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
-              <AnimatedTooltip items={quizzupIcons} />
+              <AnimatedTooltip items={projectIcons.quizzupIcons} />
             </div>
             <div className="flex justify-between items-center mt-16">
               <CardItem
@@ -392,15 +236,16 @@ const Projects = () => {
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-6">
               <Image
-                src="/time-treasures.png"
+                src="https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4K6b6ydnTlvL8HJ09RKZFnsXbNeWxwQaroVP6M"
                 height="1000"
                 width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                className="h-60 w-full object-contain rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
+                priority
               />
             </CardItem>
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
-              <AnimatedTooltip items={timeTreasuresIcons} />
+              <AnimatedTooltip items={projectIcons.timeTreasuresIcons} />
             </div>
             <div className="flex justify-between items-center mt-16">
               <CardItem
@@ -450,15 +295,16 @@ const Projects = () => {
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-6">
               <Image
-                src="/nc-news.png"
+                src="https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4KHpjQuxy4scHYIbJjExuG2velDorKanVtfkdq"
                 height="1000"
                 width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                className="h-60 w-full object-contain rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
+                priority
               />
             </CardItem>
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10 gap-2">
-              <AnimatedTooltip items={ncNewsIcons} />
+              <AnimatedTooltip items={projectIcons.ncNewsIcons} />
             </div>
             <div className="flex justify-between items-center mt-16">
               <CardItem

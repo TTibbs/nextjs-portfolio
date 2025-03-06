@@ -6,6 +6,13 @@ const nextConfig: NextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        hostname: "zorlgi4yg6.ufs.sh",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
