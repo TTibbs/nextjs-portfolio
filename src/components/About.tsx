@@ -8,11 +8,11 @@ import { Spotlight } from "./ui/Spotlight";
 const About = () => {
   const words = [
     {
-      text: "Full-Stack Developer,",
+      text: "Dad,",
       className: "text-zinc-800 dark:text-zinc-100",
     },
     {
-      text: "Dad,",
+      text: "Full-Stack Developer,",
       className: "text-zinc-800 dark:text-zinc-100",
     },
     {

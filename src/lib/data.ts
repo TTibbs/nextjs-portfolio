@@ -1,6 +1,6 @@
 import { TemplateBuilderIcon } from "@/types/common";
 
-export const noCodeTemplateBuilderIcons: TemplateBuilderIcon[] = [
+const noCodeTemplateBuilderIcons: TemplateBuilderIcon[] = [
   {
     id: 1,
     name: "Next.js",
