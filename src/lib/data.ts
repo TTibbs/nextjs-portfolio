@@ -1,51 +1,21 @@
-import { TemplateBuilderIcon } from "@/types/common";
+import { ProjectIcons } from "@/types/common";
 
-const noCodeTemplateBuilderIcons: TemplateBuilderIcon[] = [
+const gamifiedLearningAppIcons: ProjectIcons[] = [
   {
     id: 1,
-    name: "Next.js",
-    designation: "React Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-  },
-  {
-    id: 2,
-    name: "Tailwind CSS",
-    designation: "Styling Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    id: 3,
-    name: "TypeScript",
-    designation: "Typed JavaScript",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-  },
-  {
-    id: 4,
-    name: "Framer Motion",
-    designation: "Animation Library",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg",
-  },
-];
-const promptWalletIcons: TemplateBuilderIcon[] = [
-  {
-    id: 1,
-    name: "Next.js",
-    designation: "React Framework",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-  },
-  {
-    id: 2,
-    name: "React",
-    designation: "UI Library",
+    name: "React Native",
+    designation: "Frontend Framework",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
   },
   {
+    id: 2,
+    name: "Tailwind CSS",
+    designation: "Styling Framework",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
     id: 3,
     name: "TypeScript",
     designation: "Typed JavaScript",
@@ -54,20 +24,13 @@ const promptWalletIcons: TemplateBuilderIcon[] = [
   },
   {
     id: 4,
-    name: "Tailwind CSS",
-    designation: "Styling Framework",
+    name: "Expo",
+    designation: "Development Platform",
     image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    id: 5,
-    name: "OpenAI",
-    designation: "AI API",
-    image:
-      "https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4Krki5pkD4a6LsfCkMlTopJtqhv2VI3BwiU5KO",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg",
   },
 ];
-const createMVCServerIcons: TemplateBuilderIcon[] = [
+const createMVCServerIcons: ProjectIcons[] = [
   {
     id: 1,
     name: "Node.js",
@@ -97,7 +60,7 @@ const createMVCServerIcons: TemplateBuilderIcon[] = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
   },
 ];
-const quizzupIcons: TemplateBuilderIcon[] = [
+const quizzupIcons: ProjectIcons[] = [
   {
     id: 1,
     name: "Expo",
@@ -140,7 +103,7 @@ const quizzupIcons: TemplateBuilderIcon[] = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg",
   },
 ];
-const timeTreasuresIcons: TemplateBuilderIcon[] = [
+const timeTreasuresIcons: ProjectIcons[] = [
   {
     id: 1,
     name: "Node.js",
@@ -191,7 +154,7 @@ const timeTreasuresIcons: TemplateBuilderIcon[] = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
   },
 ];
-const ncNewsIcons: TemplateBuilderIcon[] = [
+const ncNewsIcons: ProjectIcons[] = [
   {
     id: 1,
     name: "Node.js",
@@ -251,8 +214,7 @@ const ncNewsIcons: TemplateBuilderIcon[] = [
 ];
 
 export const projectIcons = {
-  noCodeTemplateBuilderIcons,
-  promptWalletIcons,
+  gamifiedLearningAppIcons,
   createMVCServerIcons,
   quizzupIcons,
   timeTreasuresIcons,
