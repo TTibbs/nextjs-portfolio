@@ -50,7 +50,7 @@ const About = () => {
               alt="LinkedIn"
               width={24}
               height={24}
-              className="w-9 h-9 md:w-11 md:h-11 lg:w-13 lg:h-13 rounded-lg"
+              className="w-9 h-9 md:w-11 md:h-11 lg:w-13 lg:h-13 rounded-lg hover:scale-110 transition-all duration-300"
             />
           </Link>
           <Link href="https://www.github.com/TTibbs" target="_blank">
@@ -59,7 +59,7 @@ const About = () => {
               alt="GitHub"
               width={24}
               height={24}
-              className="w-9 h-9 md:w-11 md:h-11 lg:w-13 lg:h-13 rounded-lg"
+              className="w-9 h-9 md:w-11 md:h-11 lg:w-13 lg:h-13 rounded-lg hover:scale-110 transition-all duration-300"
             />
           </Link>
         </div>
