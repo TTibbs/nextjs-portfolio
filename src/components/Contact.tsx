@@ -2,21 +2,12 @@
 
 import Link from "next/link";
 import { Button } from "./ui/moving-border";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "sonner";
 
 const Contact = () => {
   const copyEmailToClipboard = () => {
     navigator.clipboard.writeText("tward5824@gmail.com");
-    toast.success("Email copied to clipboard!", {
-      position: "bottom-center",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      theme: "dark",
-    });
+    toast.success("Email copied to clipboard!");
   };
 
   return (
@@ -33,7 +24,7 @@ const Contact = () => {
           Email
         </Button>
         <Link
-          href="https://drive.google.com/file/d/1wwnT4kgZsBmaac5KbKAbshvwpNaJbkWo/view"
+          href="https://drive.google.com/file/d/179TbSQH_t1HSOEQMEElftolE-zAMrfqP/view"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -45,7 +36,6 @@ const Contact = () => {
           </Button>
         </Link>
       </div>
-      <ToastContainer />
     </section>
   );
 };
