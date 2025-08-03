@@ -1,4 +1,4 @@
-export type TemplateBuilderIcon = {
+export type ProjectIcons = {
   id: number;
   name: string;
   designation: string;
