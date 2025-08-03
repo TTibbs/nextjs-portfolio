@@ -64,7 +64,7 @@ const About = () => {
           </Link>
         </div>
       </div>
-      <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 animate-bounce bg-zinc-800 dark:bg-zinc-100 w-10 h-10 rounded-full flex items-center justify-center">
+      <div className="absolute bottom-32 animate-bounce bg-zinc-800 dark:bg-zinc-100 w-10 h-10 rounded-full flex items-center justify-center">
         <FaArrowDown className="w-6 h-6 text-zinc-100 dark:text-zinc-800" />
       </div>
     </section>
