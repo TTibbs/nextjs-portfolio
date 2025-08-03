@@ -30,10 +30,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider>
-          {children}
-          <Toaster />
-        </ThemeProvider>
+        <main>
+          <ThemeProvider>
+            {children}
+            <Toaster />
+          </ThemeProvider>
+        </main>
       </body>
     </html>
   );
