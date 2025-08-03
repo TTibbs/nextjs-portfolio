@@ -1,4 +1,9 @@
-import { ProjectIcons } from "@/types/common";
+type ProjectIcons = {
+  id: number;
+  name: string;
+  designation: string;
+  image: string;
+};
 
 const gamifiedLearningAppIcons: ProjectIcons[] = [
   {
