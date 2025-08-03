@@ -1,4 +1,3 @@
-import React from "react";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import Image from "next/image";
 import Link from "next/link";
