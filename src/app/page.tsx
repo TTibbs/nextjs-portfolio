@@ -3,6 +3,7 @@ import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import { Analytics } from "@vercel/analytics/react";
 import FloatingDock from "@/components/FloatingDock";
+import { Spotlight } from "@/components/ui/Spotlight";
 
 export default function Home() {
   return (
@@ -11,6 +12,10 @@ export default function Home() {
       <Analytics />
       <main className="pb-20">
         <section className="flex flex-col justify-center items-center">
+          <Spotlight
+            className="-top-0 left-0 md:left-60 md:-top-20"
+            fill="white"
+          />
           <div id="about">
             <About />
           </div>

@@ -1,7 +1,6 @@
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import Image from "next/image";
 import Link from "next/link";
-import { Spotlight } from "./ui/Spotlight";
 import { FaArrowDown } from "react-icons/fa";
 
 const About = () => {
@@ -32,7 +31,6 @@ const About = () => {
       className="flex flex-col items-center justify-center min-h-[80vh] md:min-h-screen relative"
       aria-label="About Terry"
     >
-      <Spotlight className="-top-0 left-0 md:left-60 md:-top-20" fill="white" />
       <div className="flex flex-col items-center justify-center flex-1">
         <h1 className="text-zinc-800 dark:text-zinc-100 text-2xl select-none">
           Hi, I&apos;m Terry, I am a...
