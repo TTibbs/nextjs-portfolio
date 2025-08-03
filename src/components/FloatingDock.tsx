@@ -1,11 +1,11 @@
 "use client";
 
 import { useTheme } from "@/contexts/ThemeContext";
-import { FaHome, FaUser, FaBriefcase, FaSun } from "react-icons/fa";
+import { FaHome, FaUser, FaBriefcase, FaSun, FaMoon } from "react-icons/fa";
 import Dock from "./ui/dock";
 
 const FloatingDock = () => {
-  const { toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -34,7 +34,12 @@ const FloatingDock = () => {
             onClick: () => scrollToSection("contact"),
           },
           {
-            icon: <FaSun className="w-6 h-6 text-white" />,
+            icon:
+              theme === "dark" ? (
+                <FaSun className="w-6 h-6 text-white" />
+              ) : (
+                <FaMoon className="w-6 h-6 text-white" />
+              ),
             label: "Theme",
             onClick: toggleTheme,
           },
