@@ -11,7 +11,7 @@ const Projects = () => {
         Recent Projects
       </h2>
       <section className="my-10 grid w-full max-w-7xl grid-cols-1 space-y-6 md:space-y-0 md:grid-cols-2 xl:grid-cols-3 gap-4 px-4">
-        <CardContainer className="inter-var">
+        <CardContainer>
           <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black hover:border hover:border-emerald-700 transition-all duration-200 ease-linear w-[20rem] md:w-[25rem] h-[38.5rem] rounded-xl p-6">
             <CardItem
               translateZ="50"
@@ -41,7 +41,7 @@ const Projects = () => {
             </div>
           </CardBody>
         </CardContainer>
-        <CardContainer className="inter-var">
+        <CardContainer>
           <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black hover:border hover:border-emerald-700 transition-all duration-200 ease-linear w-[20rem] md:w-[25rem] h-[38.5rem] rounded-xl p-6">
             <CardItem
               translateZ="50"
@@ -91,7 +91,7 @@ const Projects = () => {
             </div>
           </CardBody>
         </CardContainer>
-        <CardContainer className="inter-var">
+        <CardContainer>
           <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.7] dark:bg-black hover:border hover:border-emerald-700 transition-all duration-200 ease-linear w-[20rem] md:w-[25rem] h-[38.5rem] rounded-xl p-6">
             <CardItem
               translateZ="50"
