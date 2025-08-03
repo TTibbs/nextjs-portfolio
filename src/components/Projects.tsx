@@ -39,26 +39,6 @@ const Projects = () => {
             <div className="flex flex-row w-full justify-center items-center mt-16 mb-10">
               <AnimatedTooltip items={projectIcons.gamifiedLearningAppIcons} />
             </div>
-            <div className="flex justify-between items-center mt-16">
-              <CardItem
-                translateZ={20}
-                as={Link}
-                href="https://no-code-email-template-builder.vercel.app/"
-                target="__blank"
-                className="flex items-center justify-center py-3 px-4 h-10 w-20 rounded-xl text-xs font-bold bg-zinc-800 text-white text-center"
-              >
-                Live View
-              </CardItem>
-              <CardItem
-                translateZ={20}
-                as={Link}
-                href="https://github.com/TTibbs/no-code-email-template-builder"
-                target="__blank"
-                className="flex items-center justify-center py-3 px-4 h-10 w-20 rounded-xl text-xs font-bold bg-zinc-800 text-white text-center"
-              >
-                GitHub Repo
-              </CardItem>
-            </div>
           </CardBody>
         </CardContainer>
         <CardContainer className="inter-var">
