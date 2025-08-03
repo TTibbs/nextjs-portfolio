@@ -18,11 +18,11 @@ const About = () => {
       className: "text-zinc-800 dark:text-zinc-100",
     },
     {
-      text: "Life-Long",
+      text: "Continuous",
       className: "text-zinc-800 dark:text-zinc-100",
     },
     {
-      text: "Learner.",
+      text: "Learner",
       className: "text-zinc-800 dark:text-zinc-100",
     },
   ];
