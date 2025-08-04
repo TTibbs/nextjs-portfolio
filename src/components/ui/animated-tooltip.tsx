@@ -37,9 +37,14 @@ export const AnimatedTooltip = ({
     x.set(event.nativeEvent.offsetX - halfWidth); // set the x value, which is then used in transform and rotate
   };
 
+  // Safety check for undefined or null items
+  if (!items || items.length === 0) {
+    return null;
+  }
+
   return (
     <>
-      {items.map((item, idx) => (
+      {items.map((item) => (
         <div
           className="-mr-4 relative group"
           key={item.name}
