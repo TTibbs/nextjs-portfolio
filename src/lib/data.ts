@@ -12,6 +12,34 @@ type Project = {
   link?: string;
 };
 
+type Word = {
+  text: string;
+  className: string;
+};
+
+export const words: Word[] = [
+  {
+    text: "Dad,",
+    className: "text-zinc-800 dark:text-zinc-100",
+  },
+  {
+    text: "Full-Stack Developer,",
+    className: "text-zinc-800 dark:text-zinc-100",
+  },
+  {
+    text: "and",
+    className: "text-zinc-800 dark:text-zinc-100",
+  },
+  {
+    text: "Continuous",
+    className: "text-zinc-800 dark:text-zinc-100",
+  },
+  {
+    text: "Learner",
+    className: "text-zinc-800 dark:text-zinc-100",
+  },
+];
+
 export const projects: Project[] = [
   {
     name: "Gamified Learning App",

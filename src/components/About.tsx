@@ -1,31 +1,10 @@
+import { words } from "@/lib/data";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowDown } from "react-icons/fa";
 
 const About = () => {
-  const words = [
-    {
-      text: "Dad,",
-      className: "text-zinc-800 dark:text-zinc-100",
-    },
-    {
-      text: "Full-Stack Developer,",
-      className: "text-zinc-800 dark:text-zinc-100",
-    },
-    {
-      text: "and",
-      className: "text-zinc-800 dark:text-zinc-100",
-    },
-    {
-      text: "Continuous",
-      className: "text-zinc-800 dark:text-zinc-100",
-    },
-    {
-      text: "Learner",
-      className: "text-zinc-800 dark:text-zinc-100",
-    },
-  ];
   return (
     <section
       className="flex flex-col items-center justify-center min-h-[80vh] md:min-h-screen relative"
@@ -61,8 +40,8 @@ const About = () => {
           </Link>
         </div>
       </div>
-      <div className="absolute bottom-32 animate-bounce bg-zinc-800 dark:bg-zinc-100 w-10 h-10 rounded-full flex items-center justify-center">
-        <FaArrowDown className="w-6 h-6 text-zinc-100 dark:text-zinc-800" />
+      <div className="absolute bottom-32 animate-bounce bg-zinc-800 dark:bg-zinc-100 w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center">
+        <FaArrowDown className="w-5 h-5 md:w-6 md:h-6 text-zinc-100 dark:text-zinc-800" />
       </div>
     </section>
   );
