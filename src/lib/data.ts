@@ -48,20 +48,25 @@ export const projects: Project[] = [
       "https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4Kym8SpSLMUaxqoi2OCNez7KRy0ulBgtrM59Fp",
   },
   {
+    name: "Email Template Builder (WIP)",
+    description: "Email template builder for creating and sending emails.",
+    image:
+      "https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4Kpdl65ZzUJVuMCa5XOoZHYKbyPiSW6khA8szD",
+  },
+  {
+    name: "Events Platform",
+    description: "Events platform for managing events and tickets.",
+    image:
+      "https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4KVyc0G2HLbaduqnG49QCEhD86oAZLspKY2MlP",
+    link: "https://github.com/TTibbs/event-platform-fe",
+  },
+  {
     name: "Create MVC Server",
     description:
       "CLI dev tool for scaffolding MVC API projects to help speed up development.",
     image:
       "https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4KxaRpUPemN6r4KM1WguhOiBoYma5JbnZdf9Pp",
     link: "https://github.com/TTibbs/create-mvc-server",
-  },
-  {
-    name: "Events Platform",
-    description:
-      "Events platform with admin dashboard and RBAC (Role Based Access Control).",
-    image:
-      "https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4KVyc0G2HLbaduqnG49QCEhD86oAZLspKY2MlP",
-    link: "https://github.com/TTibbs/event-platform-fe",
   },
   {
     name: "Time Treasures",
@@ -96,24 +101,24 @@ const gamifiedLearningAppIcons: ProjectIcons[] = [
   },
   {
     id: 3,
-    name: "Expo",
-    designation: "Development Platform",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg",
-  },
-  {
-    id: 4,
     name: "React Native",
     designation: "Frontend Framework",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
   },
   {
-    id: 5,
-    name: "Tailwind CSS",
-    designation: "Styling Framework",
+    id: 4,
+    name: "Node.js",
+    designation: "Runtime Environment",
     image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+  },
+  {
+    id: 5,
+    name: "Expo",
+    designation: "Development Platform",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg",
   },
   {
     id: 6,
@@ -121,6 +126,57 @@ const gamifiedLearningAppIcons: ProjectIcons[] = [
     designation: "Typed JavaScript",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  },
+  {
+    id: 7,
+    name: "Tailwind CSS",
+    designation: "Styling Framework",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  },
+];
+const emailTemplateBuilderIcons: ProjectIcons[] = [
+  {
+    id: 1,
+    name: "PostgreSQL",
+    designation: "Database",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    id: 2,
+    name: "Express",
+    designation: "Web Framework",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+  },
+  {
+    id: 3,
+    name: "React",
+    designation: "UI Library",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  },
+  {
+    id: 4,
+    name: "Node.js",
+    designation: "Runtime Environment",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+  },
+  {
+    id: 5,
+    name: "TypeScript",
+    designation: "Typed JavaScript",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  },
+  {
+    id: 6,
+    name: "Tailwind CSS",
+    designation: "Styling Framework",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   },
 ];
 const createMVCServerIcons: ProjectIcons[] = [
@@ -288,6 +344,7 @@ const ncNewsIcons: ProjectIcons[] = [
 
 export const projectIcons = {
   "Gamified Learning App": gamifiedLearningAppIcons,
+  "Email Template Builder (WIP)": emailTemplateBuilderIcons,
   "Create MVC Server": createMVCServerIcons,
   "Events Platform": eventsPlatformIcons,
   "Time Treasures": timeTreasuresIcons,
