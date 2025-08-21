@@ -1,18 +1,21 @@
-type ProjectIcons = {
+export type ProjectIcons = {
   id: number;
   name: string;
   designation: string;
   image: string;
 };
 
-type Project = {
+export type Project = {
   name: string;
   description: string;
   image: string;
-  link?: string;
+  github_frontend?: string;
+  github_backend?: string;
+  frontend?: string;
+  npm_package?: string;
 };
 
-type Word = {
+export type Word = {
   text: string;
   className: string;
 };
@@ -42,7 +45,7 @@ export const words: Word[] = [
 
 export const projects: Project[] = [
   {
-    name: "Gamified Learning App",
+    name: "Gamified Learning App (WIP)",
     description: "Gamified learning app built with React Native and Expo.",
     image:
       "https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4Kym8SpSLMUaxqoi2OCNez7KRy0ulBgtrM59Fp",
@@ -52,13 +55,14 @@ export const projects: Project[] = [
     description: "Email template builder for creating and sending emails.",
     image:
       "https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4Kpdl65ZzUJVuMCa5XOoZHYKbyPiSW6khA8szD",
+    frontend: "https://snaptemplate.vercel.app/",
   },
   {
     name: "Events Platform",
     description: "Events platform for managing events and tickets.",
     image:
       "https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4KVyc0G2HLbaduqnG49QCEhD86oAZLspKY2MlP",
-    link: "https://github.com/TTibbs/event-platform-fe",
+    frontend: "https://event-platform-fe-one.vercel.app/",
   },
   {
     name: "Create MVC Server",
@@ -66,21 +70,26 @@ export const projects: Project[] = [
       "CLI dev tool for scaffolding MVC API projects to help speed up development.",
     image:
       "https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4KxaRpUPemN6r4KM1WguhOiBoYma5JbnZdf9Pp",
-    link: "https://github.com/TTibbs/create-mvc-server",
+    github_backend: "https://github.com/TTibbs/create-mvc-server",
+    npm_package: "https://www.npmjs.com/package/create-mvc-server",
   },
   {
     name: "Time Treasures",
     description: "Team project for Northcoders bootcamp.",
     image:
       "https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4K6b6ydnTlvL8HJ09RKZFnsXbNeWxwQaroVP6M",
-    link: "https://github.com/benedict-robinson/Time-Treasures-Frontend",
+    github_frontend:
+      "https://github.com/benedict-robinson/Time-Treasures-Frontend",
+    github_backend: "https://github.com/TTibbs/time-treasures-backend",
   },
   {
     name: "NC News",
-    description: "Northcoders bootcamp project.",
+    description:
+      "Northcoders bootcamp project building a news site with a RESTful API.",
     image:
       "https://zorlgi4yg6.ufs.sh/f/xOzRGhmN6r4KHpjQuxy4scHYIbJjExuG2velDorKanVtfkdq",
-    link: "https://github.com/TTibbs/nc-news",
+    github_frontend: "https://github.com/TTibbs/nc-news",
+    frontend: "https://nc-news-ten.vercel.app/",
   },
 ];
 
@@ -343,7 +352,7 @@ const ncNewsIcons: ProjectIcons[] = [
 ];
 
 export const projectIcons = {
-  "Gamified Learning App": gamifiedLearningAppIcons,
+  "Gamified Learning App (WIP)": gamifiedLearningAppIcons,
   "Email Template Builder (WIP)": emailTemplateBuilderIcons,
   "Create MVC Server": createMVCServerIcons,
   "Events Platform": eventsPlatformIcons,
